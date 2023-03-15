@@ -65,6 +65,9 @@ packages="$packages github:ubidefeo/MicroPython-Classes/lib/dfplayer.py"
 # packages="$packages github:mannbro/PicoDFPlayer/picodfplayer.py"
 # packages="$packages github:lavron/micropython-dfplayermini/dfplayermini.py"
 
+# This package is used to control the TM1637 four digit display
+packages="$packages github:mcauser/micropython-tm1637/tm1637.py"
+
 mpremote connect id:$device_sn mip install $packages
 
 # This package is used to control a servo motor
