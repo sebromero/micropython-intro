@@ -67,6 +67,16 @@ packages="$packages github:ubidefeo/MicroPython-Classes/lib/dfplayer.py"
 
 mpremote connect id:$device_sn mip install $packages
 
+# This package is used to control a servo motor
+# If you want to use easing, also install this: https://github.com/TTitanUA/smooth_servo
+# For 360 degree servos, use this: https://github.com/TTitanUA/micropython_servo_pdm_360/
+packages="github:TTitanUA/micropython_servo_pdm/micropython_servo_pdm/__init__.py"
+packages="$packages github:TTitanUA/micropython_servo_pdm/micropython_servo_pdm/version.py"
+packages="$packages github:TTitanUA/micropython_servo_pdm/micropython_servo_pdm/servo_pdm.py"
+packages="$packages github:TTitanUA/micropython_servo_pdm/micropython_servo_pdm/servo_pdm_rp2.py"
+packages="$packages github:TTitanUA/micropython_servo_pdm/micropython_servo_pdm/smooth_servo_simple.py"
+mpremote connect id:$device_sn mip install --target /lib/micropython_servo_pdm $packages
+
 # Reset the device to make the files appear in the filesystem
 echo "🔁 Resetting device..."
 mpremote connect id:$device_sn reset
