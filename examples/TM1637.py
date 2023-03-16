@@ -2,7 +2,7 @@ import tm1637
 from machine import Pin
 from time import sleep
 
-tm = tm1637.TM1637(clk=Pin("D12"), dio=Pin("D11"))
+tm = tm1637.TM1637(clk=Pin("D7"), dio=Pin("D4"))
 
 # all LEDS on "88:88"
 tm.write([127, 255, 127, 127])
