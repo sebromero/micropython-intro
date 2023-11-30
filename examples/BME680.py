@@ -4,7 +4,7 @@ from bme680 import *
 from machine import I2C
 import time
 
-bme = BME680_I2C(I2C(1))
+bme = BME680_I2C(I2C(0))
 
 while True:
     print()
