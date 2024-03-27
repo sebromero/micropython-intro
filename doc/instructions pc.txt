@@ -1,0 +1,13 @@
+# https://gitlab.com/m2crypto/m2crypto/-/blob/master/INSTALL.rst
+
+M2Crypto needs swig
+brew install swig
+brew install openssl
+env LDFLAGS="-L/usr/local/opt/openssl/lib" pip install --global-option=build_ext --global-option="-I/usr/local/opt/openssl/include" m2crypto
+pip install arduino-iot-cloud
+
+Linux:
+#apt-get install swig
+windows:
+$ choco install openssl
+$ pip install --global-option=build_ext --global-option="-IC:\Program Files\OpenSSL-Win64\include" m2crypto

@@ -1,3 +1,6 @@
+Please note: A4 and A5 are I2C only (pulled up), while A6 and A7 can only be used as inputs (no interrupts since they would fire on the Nina MCU).
+Please note: Pin A6 and A7 do not support PWM. Hence they can only be used as digital pins and can only be referenced through their digial labels D20 / D21
+
 TX,GPIO0
 RX,GPIO1
 D2,GPIO25
