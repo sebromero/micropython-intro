@@ -1,0 +1,105 @@
+name: MicroPython Demo
+widgets:
+- height: 5
+  height_mobile: 4
+  name: ⛰️ Altitude
+  type: Value
+  variables:
+  - thing_id: template-thing-id
+    variable_id: altitude
+  width: 6
+  width_mobile: 4
+  x: 10
+  x_mobile: 0
+  "y": 0
+  y_mobile: 0
+- height: 5
+  height_mobile: 4
+  name: "\U0001F4A1 LED"
+  options:
+    showLabels: true
+  type: Switch
+  variables:
+  - thing_id: template-thing-id
+    variable_id: led
+  width: 5
+  width_mobile: 4
+  x: 0
+  x_mobile: 4
+  "y": 0
+  y_mobile: 0
+- height: 10
+  height_mobile: 9
+  name: "\U0001F321 Temperature"
+  options:
+    interpolation: spline
+  type: Chart
+  variables:
+  - thing_id: template-thing-id
+    variable_id: temperature
+  width: 8
+  width_mobile: 8
+  x: 16
+  x_mobile: 0
+  "y": 0
+  y_mobile: 12
+- height: 5
+  height_mobile: 4
+  name: "\U0001F4A8 Gas (kΩ)"
+  type: Value
+  variables:
+  - thing_id: template-thing-id
+    variable_id: gas
+  width: 6
+  width_mobile: 4
+  x: 10
+  x_mobile: 4
+  "y": 5
+  y_mobile: 4
+- height: 5
+  height_mobile: 4
+  name: ⛅ Pressure (hPa)
+  options:
+    max: 1250
+    min: 300
+  type: Gauge
+  variables:
+  - thing_id: template-thing-id
+    variable_id: pressure
+  width: 5
+  width_mobile: 4
+  x: 5
+  x_mobile: 4
+  "y": 5
+  y_mobile: 8
+- height: 5
+  height_mobile: 4
+  name: "\U0001F4A7 Humidity"
+  options:
+    max: 100
+    min: 0
+    percentage: true
+  type: Percentage
+  variables:
+  - thing_id: template-thing-id
+    variable_id: humidity
+  width: 5
+  width_mobile: 4
+  x: 0
+  x_mobile: 0
+  "y": 5
+  y_mobile: 8
+- height: 5
+  height_mobile: 4
+  name: "\U0001F321 Temperature"
+  type: Value
+  variables:
+  - thing_id: template-thing-id
+    variable_id: temperature
+  width: 5
+  width_mobile: 4
+  x: 5
+  x_mobile: 0
+  "y": 0
+  y_mobile: 4
+
