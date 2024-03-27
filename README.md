@@ -1,4 +1,4 @@
-# MicroPython with Arduino Boards
+# MicroPython with Arduino Boards
 
 This repository contains the examples as presented in the Arduino/Elektor webinar. You can access the recording [here](https://www.youtube.com/watch?v=kP57-IJMQJs) 📹. Here you will also find some bonus examples that were not shown in the webinar.
 
@@ -30,7 +30,7 @@ After connecting to the board you can do a first interaction with your board whi
 
 ```python
 from machine import Pin
-led = Pin("LED", Pin.OUT)
+led = Pin("LED_BUILTIN", Pin.OUT)
 led.on()
 ```
 
